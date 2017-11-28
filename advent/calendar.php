@@ -17,6 +17,33 @@ $days = array(
     3, 22, 19, 2, 11,
     13, 17, 5, 9
 );
+
+$articles = array(
+    1 => "#1",
+    2 => "#2",
+    3 => "#3",
+    4 => "#4",
+    5 => "#",
+    6 => "#",
+    7 => "#",
+    8 => "#",
+    9 => "#",
+    10 => "#",
+    11 => "#",
+    12 => "#",
+    13 => "#",
+    14 => "#",
+    15 => "#",
+    16 => "#",
+    17 => "#",
+    18 => "#",
+    19 => "#",
+    21 => "#",
+    22 => "#",
+    23 => "#",
+    24 => "#"
+);
+
 ?>
 <div style="width:678px; height:613px; position:relative; background:url(calendar-background-2017.jpg); color:rgba(255,255,255,0.20);">
 <?php
@@ -32,7 +59,7 @@ $days = array(
         $thisdate = sprintf("%02d-12-2017", $d);
         ?><div style="width:68px; height:68px; position:absolute; top:<?php echo $top; ?>px; left:<?php echo $left; ?>px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php
         if ($today >= new DateTime($thisdate)){
-            ?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'"><?php echo $d ?></a><?php
+            ?><a href="<?php echo $articles[$d] ?>" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'"><?php echo $d ?></a><?php
         }
         elseif ($d < 24) {
             echo $d;
