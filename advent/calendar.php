@@ -8,8 +8,8 @@ if ($_GET['day']) {
 <?php
     for ($i=1; $i<=24; $i++) {
         $daynumber = sprintf("%02d", $today);
-        $thisdate = sprintf("%02d-12-2017", $i); ?>
-        <div style="width:68px; height:68px; position:absolute; top:125px; left:310px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php
+        $thisdate = sprintf("%02d-12-2017", $i);
+        ?><div style="width:68px; height:68px; position:absolute; top:125px; left:310px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php
         if ($today >= new DateTime($thisdate)){
             ?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'"><?php echo $i ?></a><?php
         }
@@ -20,5 +20,5 @@ if ($_GET['day']) {
             ?><span style="color:rgba(197,23,17,0.60);">24</span><?php
         }
         ?></div>
-    }
+    <?php } ?>
 </div>
