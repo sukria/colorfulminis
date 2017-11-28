@@ -1,28 +1,46 @@
-<?php $aujourdhui = new DateTime(); ?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document sans nom</title>
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+</head><?php
+$today = new DateTime();
+if ($_GET['day']) {
+    $today = new DateTime($_GET['day']);
+}
+?>
 <div style="width:678px; height:613px; position:relative; background:url(calendar-background-2017.jpg); color:rgba(255,255,255,0.20);">
-    <div style="width:68px; height:68px; position:absolute; top:125px; left:310px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('01-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">1</a><?php } else { ?>1<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:125px; left:378px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('02-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">2</a><?php } else { ?>2<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:125px; left:446px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('03-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">3</a><?php } else { ?>3<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:125px; left:514px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('04-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">4</a><?php } else { ?>4<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:125px; left:582px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('05-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">5</a><?php } else { ?>5<?php }; ?></div>
-    
-    <div style="width:68px; height:68px; position:absolute; top:193px; left:310px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('06-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">6</a><?php } else { ?>6<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:193px; left:378px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('07-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">7</a><?php } else { ?>7<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:193px; left:446px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('08-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">8</a><?php } else { ?>8<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:193px; left:514px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('09-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">9</a><?php } else { ?>9<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:193px; left:582px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('10-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">10</a><?php } else { ?>10<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:261px; left:310px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('11-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">11</a><?php } else { ?>11<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:261px; left:378px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('12-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">12</a><?php } else { ?>12<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:261px; left:446px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('13-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">13</a><?php } else { ?>13<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:261px; left:514px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('14-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">14</a><?php } else { ?>14<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:261px; left:582px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('15-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">15</a><?php } else { ?>15<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:329px; left:310px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('16-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">16</a><?php } else { ?>16<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:329px; left:378px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui > new DateTime('17-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">17</a><?php } else { ?>17<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:329px; left:446px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('18-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">18</a><?php } else { ?>18<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:329px; left:514px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('19-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">19</a><?php } else { ?>19<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:329px; left:582px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('20-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">20</a><?php } else { ?>20<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:397px; left:310px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('21-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">21</a><?php } else { ?>21<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:397px; left:378px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('22-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">22</a><?php } else { ?>22<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:397px; left:446px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('23-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'">23</a><?php } else { ?>23<?php }; ?></div>
-    <div style="width:68px; height:68px; position:absolute; top:397px; left:514px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php if($aujourdhui >= new DateTime('24-12-2017')) {?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#FFF'" onMouseOut="this.style.color='#c51711'">24</a><?php } else { ?><span style="color:rgba(197,23,17,0.60);">24</span><?php }; ?></div>
+<?php
+    $count = 1;
+    $ligne = 0;
+    $colonne = 0;
+
+    for ($i=1; $i<=24; $i++) {
+        
+        $top = 125 + $ligne * 68;
+        $left = 310 + $colonne * 68;
+        
+        $thisdate = sprintf("%02d-12-2017", $i);
+        ?><div style="width:68px; height:68px; position:absolute; top:<?php echo $top; ?>px; left:<?php echo $left; ?>px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php
+        if ($today >= new DateTime($thisdate)){
+            ?><a href="#" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'"><?php echo $i ?></a><?php
+        }
+        elseif ($i < 24) {
+            echo $i;
+        }
+        else {
+            ?><span style="color:rgba(197,23,17,0.60);">24</span><?php
+        }
+        ?></div>
+    <?php
+        $count++;
+        $colonne++;
+        if ($count % 5 == 0) {
+            $ligne++;
+        }
+        if (($count - 1) % 5 == 0) {
+            $colonne = 0;
+        }
+    } ?>
 </div>
