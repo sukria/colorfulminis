@@ -19,8 +19,8 @@ $days = array(
 );
 
 $articles = array(
-    1 => "http://colorfulminis.com/8-les-rois-du-ring-chien-sauvage/",
-    2 => "#2",
+    1 => "http://colorfulminis.com/les-rois-du-ring-un-jeu-dapero-imagine-par-chien-sauvage/",
+    2 => "http://colorfulminis.com/joan-of-arc-les-figurines/",
     3 => "#3",
     4 => "#4",
     5 => "#",
