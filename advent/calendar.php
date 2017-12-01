@@ -19,10 +19,10 @@ $days = array(
 );
 
 $articles = array(
-    1 => "http://colorfulminis.com/les-rois-du-ring-un-jeu-dapero-imagine-par-chien-sauvage/",
-    2 => "http://colorfulminis.com/joan-of-arc-les-figurines/",
-    3 => "#3",
-    4 => "#4",
+    1 => "/les-rois-du-ring-un-jeu-dapero-imagine-par-chien-sauvage/",
+    2 => "/joan-of-arc-les-figurines/",
+    3 => "#",
+    4 => "#",
     5 => "#",
     6 => "#",
     7 => "#",
@@ -59,7 +59,7 @@ $articles = array(
         $thisdate = sprintf("%02d-12-2017", $d);
         ?><div style="width:68px; height:68px; position:absolute; top:<?php echo $top; ?>px; left:<?php echo $left; ?>px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php
         if ($today >= new DateTime($thisdate)){
-            ?><a target="_parent" href="<?php echo $articles[$d] ?>" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'"><?php echo $d ?></a><?php
+            ?><a target="_parent" href="http://colorfulminis.com<?php echo $articles[$d] ?>" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'"><?php echo $d ?></a><?php
         }
         elseif ($d < 24) {
             echo $d;
