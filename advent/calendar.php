@@ -56,7 +56,7 @@ $articles = array(
         $top = 125 + $ligne * 68;
         $left = 310 + $colonne * 68;
         
-        $thisdate = sprintf("%02d-12-2017", $d);
+        $thisdate = sprintf("%02d-12-2017 08:00", $d);
         ?><div style="width:68px; height:68px; position:absolute; top:<?php echo $top; ?>px; left:<?php echo $left; ?>px; text-align:center; font-family: 'Permanent Marker', cursive; font-size:36px;"><?php
         if ($today >= new DateTime($thisdate)){
             ?><a target="_parent" href="http://colorfulminis.com<?php echo $articles[$d] ?>" style=" color:rgba(255,255,255,1.00); text-decoration:none;" onMouseOver="this.style.color='#c51711'" onMouseOut="this.style.color='#FFF'"><?php echo $d ?></a><?php
