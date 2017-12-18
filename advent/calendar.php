@@ -34,14 +34,15 @@ $articles = array(
     13 => "/masterclass-de-peinture-du-nmm-or-sur-la-figurine/",
     14 => "/agent-decker-un-nouveau-pnp/",
     15 => "/gel-de-reparation-pour-pinceaux-de-chez-green-stuff-world/",
-    16 => "/freebooters-fate-portrait-de-famille/",
+    16 => "/freebooters-fate-le-jeu-descarmouche-avec-des-flibustiers-du-rhum-et-du-vaudou/",
     17 => "/claustrophobia-le-dungeon-crawler-pas-comme-les-autres/",
-    18 => "#",
-    19 => "#",
-    21 => "#",
-    22 => "#",
-    23 => "#",
-    24 => "#"
+    18 => "/warhammer-underworlds-shadespire-personnaliser-sa-bande/",
+    19 => "/decaper-vos-figurines-facilement-avec-du-glanzer/",
+    20 => "/master-class-de-peinture-le-blanc-cette-non-couleur-sur-la-figurine/",
+    21 => "/legends-of-the-alliance-lapplication-pour-assaut-sur-lempire/",
+    22 => "/les-playlists-indispensables-pour-vos-parties-de-jeux-de-figurines/",
+    23 => "/mission-zombicide-ou-comment-peindre-71-figurines-en-35-jours/",
+    24 => "/retrospective-de-lannee-2017/"
 );
 
 ?>
